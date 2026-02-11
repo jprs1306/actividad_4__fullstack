@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://actividad-4-fullstack.onrender.com'
 let token = localStorage.getItem('token')
 
 document.addEventListener('DOMContentLoaded', () => {
