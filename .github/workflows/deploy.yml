@@ -11,16 +11,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Bajar código
-      uses: actions/checkout@v3
+      - name: Bajar código
+        uses: actions/checkout@v3
 
-    - name: Instalar Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18
+      - name: Instalar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
 
-    - name: Instalar dependencias
-      run: npm install
+      - name: Instalar dependencias
+        run: npm install
 
-    - name: Verificación de Código
-  run: echo "✅ El código se instaló correctamente. Saltando conexión a DB por seguridad."
+      - name: Verificación de Código
+        run: echo "Codigo verificado correctamente. Saltando DB."
